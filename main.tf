@@ -1,12 +1,12 @@
 #this file consists of code for instances and sg
 provider "aws" {
 region = "us-east-1"
-access_key = "AKIAYWV3XRFX4XCLITLH"
-secret_key = "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"
+access_key = "AKIAYWV3XRFXTGUPJMMA"
+secret_key = "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"
 }
 
 resource "aws_instance" "one" {
-  ami             = "ami-04823729c75214919"
+  ami             = "ami-018ba43095ff50d08"
   instance_type   = "t2.micro"
   key_name        = "nvkey"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -25,7 +25,7 @@ EOF
 }
 
 resource "aws_instance" "two" {
-  ami             = "ami-04823729c75214919"
+  ami             = "ami-018ba43095ff50d08"
   instance_type   = "t2.micro"
   key_name        = "nvkey"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -44,7 +44,7 @@ EOF
 }
 
 resource "aws_instance" "three" {
-  ami             = "ami-04823729c75214919"
+  ami             = "ami-018ba43095ff50d08"
   instance_type   = "t2.micro"
   key_name        = "nvkey"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -55,7 +55,7 @@ resource "aws_instance" "three" {
 }
 
 resource "aws_instance" "four" {
-  ami             = "ami-04823729c75214919"
+  ami             = "ami-018ba43095ff50d08"
   instance_type   = "t2.micro"
   key_name        = "nvkey"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -90,7 +90,7 @@ resource "aws_security_group" "five" {
 }
 
 resource "aws_s3_bucket" "six" {
-  bucket = "rahhhamshaikterraaa77889900prodenv"
+  bucket = "rrrahhhamshaikterraaa77889900prodenv"
 }
 
 resource "aws_iam_user" "seven" {
